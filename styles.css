@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #4f0975;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+  padding: 40px;
+}
+
+.profile-container {
+  width: 322px;
+  background-color: #af19e5;
+}
+
+.pic-container {
+  width: 322px;
+  height: 355px;
+}
+
+.contact-container {
+  height: 256px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 40px;
+}
+
+.title {
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+.title-major {
+  margin: 0;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.contacts {
+  height: 156px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact img {
+  margin-right: 15px;
+}
+
+.contact a {
+  font-size: 20px;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.contact a:hover {
+  opacity: 1
+}
+
+.details-container {
+  background-color: blueviolet;
+}
