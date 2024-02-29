@@ -32,11 +32,19 @@ a {
 }
 
 .contact-container {
-  height: 256px;
+  box-sizing: border-box;
+  height: 338px;
+  width: 322px;
+  margin-top: -30px;
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 24px 40px;
+  /* border: 1px solid red; */
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  background-color: #af19e5;
 }
 
 .title {
@@ -49,6 +57,7 @@ h1 {
 
 .title-major {
   margin: 0;
+  margin-top: 8px;
   font-size: 20px;
   font-style: italic;
 }
@@ -80,4 +89,128 @@ h1 {
 
 .details-container {
   background-color: blueviolet;
+  width: 100%;
+}
+
+.about {
+  width: 690px;
+}
+
+.about p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+
+.section-wrapper {
+  padding: 48px 28px;
+  border: 1px solid white;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.experience::after,
+.skills::after,
+.projects::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #d3d3d3;
+}
+
+.experience-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skills-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.skills p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+
+.education {
+  justify-content: space-between;
+  display: flex;
+}
+
+.education-wrapper {
+  width: 80%;
+}
+
+.section-item {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.education .section-item {
+  height: 70px;
+}
+
+.section-item h3,
+.section-item p {
+  margin: 0;
+}
+
+.description,
+.position,
+.major,
+.years {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+
+.years {
+  color: #d3d3d3;
+  font-style: italic;
+}
+
+.projects {
+  position: relative;
 }
