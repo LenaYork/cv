@@ -88,7 +88,7 @@ h1 {
 }
 
 .details-container {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   width: 100%;
 }
 
@@ -171,6 +171,7 @@ h3 {
 }
 
 .education {
+  margin-top: 20px;
   justify-content: space-between;
   display: flex;
 }
@@ -213,4 +214,114 @@ h3 {
 
 .projects {
   position: relative;
+}
+
+.stack,
+.position {
+  font-weight: 700;
+}
+
+.projects {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 400px;
+  height: 250px;
+  background-size: cover;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.project:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.links {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.onlyLink {
+  justify-content: center;
+}
+
+.piano {
+  background: url(./assets/piano.png) center no-repeat;
+  background-size: cover;
+}
+
+.bookstore {
+  background: url(./assets/bookstore.png) center no-repeat;
+  background-size: cover;
+}
+
+.meritum {
+  background: url(./assets/meritum.png) center no-repeat;
+  background-size: cover;
+}
+
+.project-info {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #af19e5;
+  padding: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: 0.5s;
+  opacity: 0;
+  /* opacity: 0.8; */
+}
+
+.project-info h3,
+.project-info p {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  /* background: linear-gradient(to right, transparent, #f8f3f3); */
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.project-info h3 {
+  font-size: 20px;
+}
+
+.technologies {
+  font-style: italic;
 }
