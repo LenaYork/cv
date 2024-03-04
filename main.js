@@ -1,29 +1,34 @@
-const pianoCard = document.querySelector(".piano");
-const pianoDescription = document.querySelector("#piano");
-pianoCard.addEventListener("mouseover", () => {
-  pianoDescription.style.opacity = 0.9;
+const cards = document.querySelectorAll(".project");
+
+cards.forEach(card => {
+  const projectTitle = card.classList[1];
+
+  card.addEventListener("mouseover", () => {
+    document.querySelector(`#${projectTitle}`).style.opacity = 0.9;
+  })
+
+  card.addEventListener("mouseout", () => {
+    document.querySelector(`#${projectTitle}`).style.opacity = 0;
+  })
 })
 
-pianoCard.addEventListener("mouseout", () => {
-  pianoDescription.style.opacity = 0;
-})
+window.addEventListener('resize', function () {
+  const windowWidth = window.innerWidth;
+  const contactContainer = document.querySelector('.contact-container');
+  const avatar = this.document.querySelector('.avatar');
+  if (windowWidth >= 500 && windowWidth <= 676) {
+    contactContainer.style.marginLeft = `${-299 + windowWidth - 676}px`;
 
-const bookstoreCard = document.querySelector(".bookstore");
-const bookstoreDescription = document.querySelector("#bookstore");
-bookstoreCard.addEventListener("mouseover", () => {
-  bookstoreDescription.style.opacity = 0.9;
-})
+  } else {
+    contactContainer.style.marginLeft = '0';
+  }
 
-bookstoreCard.addEventListener("mouseout", () => {
-  bookstoreDescription.style.opacity = 0;
-})
+  if (windowWidth >= 600 && windowWidth <= 676) {
+    avatar.style.marginLeft = `${-1 + windowWidth - 676}px`;
+  } else if (windowWidth > 676 || windowWidth < 500) {
+    avatar.style.marginLeft = 0;
+  } else if (windowWidth >= 500 && windowWidth <= 600) {
+    avatar.style.marginLeft = `-75px`;
+  }
 
-const meritumCard = document.querySelector(".meritum");
-const meritumDescription = document.querySelector("#meritum");
-meritumCard.addEventListener("mouseover", () => {
-  meritumDescription.style.opacity = 0.9;
-})
-
-meritumCard.addEventListener("mouseout", () => {
-  meritumDescription.style.opacity = 0;
-})
+}); 
